@@ -17,6 +17,7 @@ const adminRoutes = require("./routes/adminRoutes");
 const chatRoutes = require("./routes/chatRoutes");
 const complaintRoutes = require("./routes/complaintRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
+const platformManagerRoutes = require("./routes/platformManagerRoutes");
 
 const {
   PORT,
@@ -96,6 +97,7 @@ app.use("/api", companyRoutes);
 app.use("/api", workerRoutes);
 app.use("/api", projectRoutes);
 app.use("/api", adminRoutes);
+app.use("/api", platformManagerRoutes);
 app.use("/api", chatRoutes);
 app.use("/api/complaints", complaintRoutes);
 app.use("/api/payment", paymentRoutes);
